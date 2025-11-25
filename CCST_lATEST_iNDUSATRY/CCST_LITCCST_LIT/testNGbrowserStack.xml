@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="BrowserStack Suite">
+      <test name="Simple TestNG Test">
+         <parameter name="os" value="windows"></parameter>v
+         <parameter name="osVersion" value="10"></parameter>
+          <parameter name="browser" value="Chrome"></parameter>
+           <parameter name="browserVersion" value="120"></parameter>
+        <classes>
+         <class name="ccstDemo.Login_SauceDemo_TestNG"/>    
+        </classes>
+        </test>
+    
+</suite>
