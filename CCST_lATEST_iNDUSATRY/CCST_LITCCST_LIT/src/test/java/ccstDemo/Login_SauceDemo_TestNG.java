@@ -57,7 +57,9 @@ public class Login_SauceDemo_TestNG {
         WebElement errorElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[@data-test='error']")));
 
         // Assert that the error element is displayed
-        Assert.assertTrue(errorElement.isDisplayed(), "Error message is not displayed.");               
+        Assert.assertTrue(errorElement.isDisplayed(), "Error message is not displayed.");    
+        
+        
     }
 
     @AfterMethod
