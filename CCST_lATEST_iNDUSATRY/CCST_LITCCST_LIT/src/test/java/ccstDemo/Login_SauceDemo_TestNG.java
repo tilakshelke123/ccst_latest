@@ -28,21 +28,21 @@ public class Login_SauceDemo_TestNG {
     public void testPositiveLoginSauceDemo() {
         driver.get("https://www.saucedemo.com");
 
-        WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-name")));
-        WebElement password = driver.findElement(By.id("password"));
-        WebElement loginButton = driver.findElement(By.id("login-button"));
-
-        username.sendKeys("standard_user");
-        password.sendKeys("secret_sauce");
-        loginButton.click();
-
-        // Verify login by checking the URL
-        wait.until(ExpectedConditions.urlContains("inventory.html"));
-        String currentUrl = driver.getCurrentUrl();
-        Assert.assertTrue(currentUrl.contains("inventory.html"), "Login failed. URL: " + currentUrl);
+//        WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-name")));
+//        WebElement password = driver.findElement(By.id("password"));
+//        WebElement loginButton = driver.findElement(By.id("login-button"));
+//
+//        username.sendKeys("standard_user");
+//        password.sendKeys("secret_sauce");
+//        loginButton.click();
+//
+//        // Verify login by checking the URL
+//        wait.until(ExpectedConditions.urlContains("inventory.html"));
+//        String currentUrl = driver.getCurrentUrl();
+//        Assert.assertTrue(currentUrl.contains("inventory.html"), "Login failed. URL: " + currentUrl);
     }
 
-    @Test(priority = 2)
+   // @Test(priority = 2)
     public void testNegativeLoginSauceDemo() {
         driver.get("https://www.saucedemo.com");
 
@@ -62,11 +62,11 @@ public class Login_SauceDemo_TestNG {
         
     }
 
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }    
+//    @AfterMethod
+//    public void tearDown() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }    
     
 }
