@@ -51,7 +51,7 @@ public class CartCheck {
 
 		driver = new RemoteWebDriver(new URL(BROWSERSTACK_URL), caps);
 
-		driver = new ChromeDriver();
+//		driver = new ChromeDriver();
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.manage().window().maximize();
@@ -100,7 +100,7 @@ public class CartCheck {
 
 		} 
 		catch (Exception e) {
-			markTestStatus(" failed ", "Add to Cart Failed " + e.getMessage(), driver);
+		markTestStatus(" failed ", "Add to Cart Failed " + e.getMessage(), driver);
 			
 		}
 
