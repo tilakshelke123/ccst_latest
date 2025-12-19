@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-19T15:24:14 IST" name="Default suite" finished-at="2025-12-19T15:24:17 IST" duration-ms="2450">
+    <groups>
+    </groups>
+    <test started-at="2025-12-19T15:24:14 IST" name="Default test" finished-at="2025-12-19T15:24:17 IST" duration-ms="2450">
+      <class name="microservice.copy.PostTest">
+        <test-method signature="test_post()[pri:0, instance:microservice.copy.PostTest@4f83df68]" started-at="2025-12-19T15:24:14 IST" name="test_post" finished-at="2025-12-19T15:24:17 IST" duration-ms="2404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_post -->
+      </class> <!-- microservice.copy.PostTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
